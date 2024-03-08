@@ -5,5 +5,4 @@ class Contract
     public string? PaymentForm { get; set; }
     public DateTime ServiceStartDate { get; set; }
     public DateTime ServiceEndDate { get; set; }
-    public void Offer() { }
 }
