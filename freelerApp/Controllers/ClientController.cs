@@ -1,7 +1,11 @@
 class ClientController
 {
     private readonly Client? Client;
-
+    public Client GetClientProfile()
+    {
+        return null;
+    }
+    public void UpdateClient() { }
     public void CreateService() { }
     public void RemoveService() { }
     public Service UpdateService(Service service)
