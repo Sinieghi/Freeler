@@ -7,10 +7,14 @@ class FreelancerController
     {
         return null;
     }
+    public List<Contract> GetAcceptedContracts()
+    {
+        return null;
+    }
     public Freelancer GetFreelancerProfile()
     {
         return null;
     }
-    public void UpdateFreelancer() { }
+    public void UpdateFreelancer(Freelancer freelancer) { }
 
 }

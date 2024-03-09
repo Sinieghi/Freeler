@@ -5,7 +5,7 @@ class ClientController
     {
         return null;
     }
-    public void UpdateClient() { }
+    public void UpdateClient(Client client) { }
     public void CreateService() { }
     public void RemoveService() { }
     public Service UpdateService(Service service)
@@ -16,10 +16,15 @@ class ClientController
     {
         return null;
     }
+
     public void AcceptApplication() { }
     public void DeniedApplication() { }
     public void SendOffer() { }
     public List<Contract> GetContracts()
+    {
+        return null;
+    }
+    public List<Contract> GetAcceptedContracts()
     {
         return null;
     }
