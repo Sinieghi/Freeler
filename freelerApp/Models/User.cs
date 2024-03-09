@@ -10,7 +10,7 @@ class User
     public string? Email { get; set; }
     [Required(ErrorMessage = "{0} required")]
     public string? Password { get; set; }
-    private readonly Location? location;
-    private readonly Client? client = null;
-    private readonly Freelancer? Freelancer = null;
+    public readonly Location? location;
+    public readonly Client? client = null;
+    public readonly Freelancer? Freelancer = null;
 }
