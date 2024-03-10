@@ -24,7 +24,6 @@ class FreelerContext : DbContext
             e.Property(x => x.client);
             e.Property(x => x.Freelancer);
         });
-
         modelBuilder.Entity<Client>(c =>
         {
             c.HasKey(x => x.Id);
