@@ -44,14 +44,22 @@ class UserController(UserServices userServices, IOptions<FreelerConfig> options)
 
     public async Task<IActionResult> Logout()
     {
+        return null;
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ChangeEmail()
+    {
+        return null;
 
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> ChangeEmail() { }
+    public async Task<IActionResult> ChangePass()
+    {
+        return null;
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> ChangePass() { }
+    }
 }
