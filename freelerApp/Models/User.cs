@@ -9,7 +9,7 @@ class User
     [EmailAddress(ErrorMessage = "Enter a valid email")]
     public string? Email { get; set; }
     [Required(ErrorMessage = "{0} required")]
-    public string? Password { get; set; }
+    public string? PasswordHash { get; set; }
     public readonly Location? location;
     public readonly Client? client = null;
     public readonly Freelancer? Freelancer = null;
