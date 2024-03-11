@@ -1,3 +1,5 @@
+using FreelerApp.Models;
+
 class ClientController
 {
     private readonly Client? Client;

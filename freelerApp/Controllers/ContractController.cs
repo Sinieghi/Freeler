@@ -1,3 +1,5 @@
+using FreelerApp.Models;
+
 class ContractController
 {
     public User User;

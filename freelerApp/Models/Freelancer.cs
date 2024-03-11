@@ -1,3 +1,4 @@
+namespace FreelerApp.Models;
 class Freelancer
 {
     public int Id { get; set; }

@@ -1,3 +1,4 @@
+namespace FreelerApp.Models;
 class Client
 {
     public int Id { get; set; }

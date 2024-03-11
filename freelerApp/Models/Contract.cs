@@ -1,3 +1,4 @@
+namespace FreelerApp.Models;
 class Contract
 {
     public int Id { get; set; }

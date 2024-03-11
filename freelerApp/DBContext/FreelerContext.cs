@@ -1,3 +1,4 @@
+using FreelerApp.Models;
 using Microsoft.EntityFrameworkCore;
 
 class FreelerContext : DbContext
@@ -20,7 +21,7 @@ class FreelerContext : DbContext
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Name);
-            e.Property(x => x.Password);
+            e.Property(x => x.PasswordHash);
             e.Property(x => x.client);
             e.Property(x => x.Freelancer);
         });

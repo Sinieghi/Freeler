@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using HahnCargoSim.Helper;
 using Microsoft.Extensions.Options;
+using FreelerApp.Models;
 [Authorize]
 [ApiController]
 [Route("[controller]/[action]")]

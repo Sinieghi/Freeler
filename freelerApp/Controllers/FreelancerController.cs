@@ -1,3 +1,5 @@
+using FreelerApp.Models;
+
 class FreelancerController
 {
     public Freelancer? freelancer;

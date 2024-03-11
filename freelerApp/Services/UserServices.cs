@@ -1,3 +1,4 @@
+using FreelerApp.Models;
 using HahnCargoSim.Helper;
 using Microsoft.EntityFrameworkCore;
 
