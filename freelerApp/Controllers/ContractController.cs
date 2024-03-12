@@ -1,5 +1,6 @@
 using FreelerApp.Models;
 
+namespace FreelerApp.Controllers;
 class ContractController
 {
     public User User;

@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Authorization;
 using HahnCargoSim.Helper;
 using Microsoft.Extensions.Options;
 using FreelerApp.Models;
+
+namespace FreelerApp.Controllers;
 [Authorize]
 [ApiController]
 [Route("[controller]/[action]")]
-class UserController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
+class ProfileController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
 {
 
     private readonly UserServices _us = userServices;
@@ -15,10 +17,12 @@ class UserController(UserServices userServices, IOptions<FreelerConfig> options)
     {
         return View();
     }
+
     public IActionResult Sign()
     {
         return View();
     }
+
     public async Task<IActionResult> Sign(User user)
     {
         await _us.InsertAsync(user);
