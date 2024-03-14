@@ -8,12 +8,13 @@ namespace FreelerApp.Controllers;
 [Authorize]
 [ApiController]
 [Route("[controller]/[action]")]
-class ProfileController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
+class ProfilesController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
 {
 
     private readonly UserServices _us = userServices;
     private readonly FreelerConfig config = options.Value;
-    public async Task<IActionResult> Index()
+
+    public IActionResult Index()
     {
         return View();
     }
