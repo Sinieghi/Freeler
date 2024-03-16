@@ -1,5 +1,5 @@
 namespace FreelerApp.Models;
-class Client
+public class Client
 {
     public int Id { get; set; }
     public string? SearchingFor { get; set; }

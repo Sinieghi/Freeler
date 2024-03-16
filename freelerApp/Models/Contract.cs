@@ -1,5 +1,5 @@
 namespace FreelerApp.Models;
-class Contract
+public class Contract
 {
     public int Id { get; set; }
     public double Price { get; set; }

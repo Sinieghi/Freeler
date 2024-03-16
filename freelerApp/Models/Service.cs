@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace FreelerApp.Models;
 
-class Service
+public class Service
 {
     public int Id { get; set; }
     public string? Segment { get; set; } // Electric, mechanical and so on

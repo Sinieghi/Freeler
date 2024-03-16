@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace FreelerApp.Models;
 
-class User
+public class User
 {
     public int Id { get; set; }
     [Required(ErrorMessage = "{0} required")]

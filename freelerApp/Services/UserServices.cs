@@ -1,8 +1,8 @@
 using FreelerApp.Models;
 using HahnCargoSim.Helper;
 using Microsoft.EntityFrameworkCore;
-
-class UserServices
+namespace FreelerApp.Services;
+public class UserServices
 {
     private readonly FreelerContext _freeler = new();
     public async Task InsertAsync(User user)

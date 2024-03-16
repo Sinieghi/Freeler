@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Authorization;
 using HahnCargoSim.Helper;
 using Microsoft.Extensions.Options;
 using FreelerApp.Models;
+using FreelerApp.Services;
 
 namespace FreelerApp.Controllers;
 [Authorize]
 [ApiController]
 [Route("[controller]/[action]")]
-class ProfilesController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
+public class ProfilesController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
 {
 
     private readonly UserServices _us = userServices;

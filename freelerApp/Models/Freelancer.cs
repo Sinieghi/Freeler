@@ -1,5 +1,5 @@
 namespace FreelerApp.Models;
-class Freelancer
+public class Freelancer
 {
     public int Id { get; set; }
     public string? PaidPlan { get; set; }
