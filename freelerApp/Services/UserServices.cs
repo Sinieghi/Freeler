@@ -18,4 +18,12 @@ public class UserServices
 
         return user;
     }
+    public async Task<User> GetUser(string token)
+    {
+
+        // CryptoHelper.IsAuthorized(token);
+
+        return await _freeler.Users.FirstOrDefaultAsync();
+
+    }
 }

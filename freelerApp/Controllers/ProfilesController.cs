@@ -6,9 +6,9 @@ using FreelerApp.Models;
 using FreelerApp.Services;
 
 namespace FreelerApp.Controllers;
-[Authorize]
-[ApiController]
-[Route("[controller]/[action]")]
+// [Authorize]
+// [ApiController]
+// [Route("[controller]/[action]")]
 public class ProfilesController(UserServices userServices, IOptions<FreelerConfig> options) : Controller
 {
 
@@ -17,6 +17,7 @@ public class ProfilesController(UserServices userServices, IOptions<FreelerConfi
 
     public IActionResult Index()
     {
+        if (_us != null) return View(_us);
         return View();
     }
 
